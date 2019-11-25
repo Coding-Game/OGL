@@ -43,6 +43,7 @@
 		FE0BCF0D2385443B0067D439 /* 7.4.camera.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = 7.4.camera.vs; sourceTree = "<group>"; };
 		FE2DE4062383AF2600E4B489 /* stb_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
 		FE5D60482382975E00505B07 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glad.c; path = glad/src/glad.c; sourceTree = SOURCE_ROOT; };
+		FEB06A0D238BC35500EC5589 /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +89,7 @@
 				FE5D60482382975E00505B07 /* glad.c */,
 				24C6C856237F909200D3093E /* main.cpp */,
 				FE2DE4062383AF2600E4B489 /* stb_image.h */,
+				FEB06A0D238BC35500EC5589 /* main.h */,
 			);
 			path = OGL;
 			sourceTree = "<group>";
