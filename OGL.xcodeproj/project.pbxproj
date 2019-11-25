@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		24C6C857237F909200D3093E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 24C6C856237F909200D3093E /* main.cpp */; };
-		24C6C85E237F90EC00D3093E /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 24C6C85D237F90EC00D3093E /* glad.c */; };
 		24C6C861237F930E00D3093E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C6C860237F930E00D3093E /* Cocoa.framework */; };
 		24C6C863237F931B00D3093E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C6C862237F931A00D3093E /* OpenGL.framework */; };
 		24C6C865237F932600D3093E /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C6C864237F932600D3093E /* GLUT.framework */; };
 		24C6C867237F933200D3093E /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C6C866237F933200D3093E /* CoreVideo.framework */; };
 		24C6C869237F934400D3093E /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C6C868237F934400D3093E /* IOKit.framework */; };
 		24C6C86B237F94A700D3093E /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C6C86A237F94A700D3093E /* libglfw3.a */; };
+		FE5D60492382975E00505B07 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = FE5D60482382975E00505B07 /* glad.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,18 +30,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		240D9DBE23814AC0006C919F /* 3.3.shader.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = 3.3.shader.vs; path = Shaders/3.3.shader.vs; sourceTree = "<group>"; };
-		240D9DBF23814AC0006C919F /* 3.3.shader.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = 3.3.shader.fs; path = Shaders/3.3.shader.fs; sourceTree = "<group>"; };
-		240D9DC12381515A006C919F /* shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shader.h; sourceTree = "<group>"; };
 		24C6C853237F909200D3093E /* OGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OGL; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C6C856237F909200D3093E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		24C6C85D237F90EC00D3093E /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glad.c; path = ../../../Downloads/glad/src/glad.c; sourceTree = "<group>"; };
 		24C6C860237F930E00D3093E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		24C6C862237F931A00D3093E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		24C6C864237F932600D3093E /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		24C6C866237F933200D3093E /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		24C6C868237F934400D3093E /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		24C6C86A237F94A700D3093E /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = ../../../../usr/local/lib/libglfw3.a; sourceTree = "<group>"; };
+		FE0BCF0B23853DFA0067D439 /* learnopengl */ = {isa = PBXFileReference; lastKnownFileType = folder; path = learnopengl; sourceTree = "<group>"; };
+		FE0BCF0C2385443B0067D439 /* 7.4.camera.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = 7.4.camera.fs; sourceTree = "<group>"; };
+		FE0BCF0D2385443B0067D439 /* 7.4.camera.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = 7.4.camera.vs; sourceTree = "<group>"; };
+		FE2DE4062383AF2600E4B489 /* stb_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		FE5D60482382975E00505B07 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glad.c; path = glad/src/glad.c; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +82,12 @@
 		24C6C855237F909200D3093E /* OGL */ = {
 			isa = PBXGroup;
 			children = (
-				240D9DC12381515A006C919F /* shader.h */,
-				240D9DBF23814AC0006C919F /* 3.3.shader.fs */,
-				240D9DBE23814AC0006C919F /* 3.3.shader.vs */,
-				24C6C85D237F90EC00D3093E /* glad.c */,
+				FE0BCF0C2385443B0067D439 /* 7.4.camera.fs */,
+				FE0BCF0D2385443B0067D439 /* 7.4.camera.vs */,
+				FE0BCF0B23853DFA0067D439 /* learnopengl */,
+				FE5D60482382975E00505B07 /* glad.c */,
 				24C6C856237F909200D3093E /* main.cpp */,
+				FE2DE4062383AF2600E4B489 /* stb_image.h */,
 			);
 			path = OGL;
 			sourceTree = "<group>";
@@ -160,7 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24C6C857237F909200D3093E /* main.cpp in Sources */,
-				24C6C85E237F90EC00D3093E /* glad.c in Sources */,
+				FE5D60492382975E00505B07 /* glad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,13 +220,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				"HEADER_SEARCH_PATHS[arch=*]" = "/usr/local//include";
-				"LIBRARY_SEARCH_PATHS[arch=*]" = "/usr/local//lib";
+				"HEADER_SEARCH_PATHS[arch=*]" = /usr/local/include;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = /Users/qxz0bz3/Projects/OGL/OGL;
 			};
 			name = Debug;
 		};
@@ -273,12 +276,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				"HEADER_SEARCH_PATHS[arch=*]" = "/usr/local//include";
-				"LIBRARY_SEARCH_PATHS[arch=*]" = "/usr/local//lib";
+				"HEADER_SEARCH_PATHS[arch=*]" = /usr/local/include;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = /Users/qxz0bz3/Projects/OGL/OGL;
 			};
 			name = Release;
 		};

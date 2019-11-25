@@ -208,6 +208,7 @@ int main()
     ourShader.setInt("texture1", 0);
     ourShader.setInt("texture2", 1);
     
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
     
     // render loop
     // -----------
@@ -225,7 +226,7 @@ int main()
         
         // render
         // ------
-        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+        
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         
         // bind textures on corresponding texture units
