@@ -34,8 +34,8 @@ int main()
     
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // ------------------------------------------------------------------
-    unsigned int VAO, VBO;
-    createVAO(&VAO, &VBO);
+    unsigned int VAO, VBOs[2];
+    createVAO(&VAO, VBOs);
     
     // world space positions of our cubes
     glm::vec3 cubePositions[] = {
@@ -153,8 +153,15 @@ int main()
     
     // optional: de-allocate all resources once they've outlived their purpose:
     // ------------------------------------------------------------------------
+    glBindVertexArray(0);
     glDeleteVertexArrays(1, &VAO);
-    glDeleteBuffers(1, &VBO);
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
+    glDeleteBuffers(2, VBOs);
+    glBindTexture(GL_TEXTURE_2D, 0);
+    glDeleteTextures(1, &texture1);
+    glDeleteTextures(1, &texture2);
+    
+    
     
     // glfw: terminate, clearing all previously allocated GLFW resources.
     // ------------------------------------------------------------------
